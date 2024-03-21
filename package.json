@@ -1,0 +1,51 @@
+{
+  "name": "vue-codemirror-playground",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "run-p type-check \"build-only {@}\" --",
+    "build-only": "vite build",
+    "dev": "vite",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "type-check": "vue-tsc --build --force"
+  },
+  "dependencies": {
+    "@codemirror/lang-cpp": "^6.0.2",
+    "@codemirror/lang-css": "^6.2.1",
+    "@codemirror/lang-html": "^6.4.8",
+    "@codemirror/lang-java": "^6.0.1",
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@codemirror/lang-json": "^6.0.1",
+    "@codemirror/lang-markdown": "^6.2.4",
+    "@codemirror/lang-php": "^6.0.1",
+    "@codemirror/lang-python": "^6.1.4",
+    "@codemirror/lang-rust": "^6.0.1",
+    "@codemirror/lang-sql": "^6.6.1",
+    "@codemirror/lang-xml": "^6.1.0",
+    "@codemirror/language": "^6.10.1",
+    "@codemirror/legacy-modes": "^6.3.3",
+    "@codemirror/state": "^6.4.1",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@codemirror/view": "^6.26.0",
+    "@uiw/codemirror-theme-github": "^4.21.24",
+    "vue": "^3.4.21",
+    "vue-codemirror": "^6.1.1"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.24.1",
+    "@ntnyq/eslint-config": "^1.21.0",
+    "@ntnyq/prettier-config": "^1.21.0",
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.30",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^8.57.0",
+    "npm-run-all2": "^6.1.2",
+    "typescript": "~5.4.3",
+    "vite": "^5.2.2",
+    "vue-tsc": "^2.0.7"
+  },
+  "prettier": "@ntnyq/prettier-config"
+}
